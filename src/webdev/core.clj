@@ -7,12 +7,12 @@
 
 (defn greet [req]
   {:status 200
-   :body "Hello, World! Fuck you!"
+   :body "Hello, World!"
    :headers {}})
 
 (defn goodbye [req]
   {:status 200
-   :body "Goodbye, Fuck heads!"
+   :body "Laters!"
    :headers {}})
 
 (defn about [req]
