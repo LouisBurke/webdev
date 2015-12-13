@@ -28,7 +28,7 @@
 ;;                                        ; Any additional keys are passed to the driver
 ;;                                        ; as driver-specific properties.
 ;;           :user "louis"
-;;           :password "5!ngularity"}))
+;;           :password ""}))
 
 (defn greet [req]
   {:status 200
