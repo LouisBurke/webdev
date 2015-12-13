@@ -2,6 +2,17 @@
   (:require [hiccup.page :refer [html5]]
             [hiccup.core :refer [html h]]))
 
+(defn home-page []
+  (html5 {:lang :en}
+         [:head
+          [:title "Listlessness"]
+          [:meta {:name :viewport
+                  :content "width=device-width, initial-scale=1.0"}]
+          [:link {:href "/bootstrap/css/bootstrap.min.css"
+                  :rel :stylesheet}]]
+         [:body
+          [:a {:href "http://github.com"} "GitHub"]]))
+
 (defn new-item []
   (html
    [:form.form-horizontal

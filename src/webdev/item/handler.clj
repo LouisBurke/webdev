@@ -3,7 +3,13 @@
                                        read-item
                                        update-item
                                        delete-item]]
-            [webdev.item.view :refer [items-page]]))
+            [webdev.item.view :refer [home-page
+                                      items-page]]))
+
+(defn handle-home-page [req]
+  {:status 200
+   :headers {}
+   :body (home-page)})
 
 (defn handle-index-items [req]
   (let [db (:webdev/db req)
